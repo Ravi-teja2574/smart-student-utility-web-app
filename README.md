@@ -30,38 +30,6 @@ The application provides several useful student utilities in one interface.
   - Character count
 
 Example:
-# 🎓 Student Utility Web App
-
-A simple **multi-tool student web application** built using **HTML, CSS, and JavaScript**.  
-This project demonstrates core frontend concepts such as **form handling, validation, DOM manipulation, conditional logic, arrays, loops, and UI styling**.
-
-The application provides several useful student utilities in one interface.
-
----
-
-## 🚀 Features
-
-### 📊 Student Result Calculator
-- Enter marks for 5 subjects
-- Calculates:
-  - Total marks
-  - Average
-  - Grade (A+, A, B, C, D, Fail)
-- Displays grade badge with color
-- Validates:
-  - Empty inputs
-  - Marks range (0–100)
-
----
-
-### 🔁 Palindrome Checker
-- Enter a word
-- Checks if the word is a **palindrome**
-- Displays:
-  - Result
-  - Character count
-
-Example:
 madam → Palindrome
 hello → Not a palindrome
 
