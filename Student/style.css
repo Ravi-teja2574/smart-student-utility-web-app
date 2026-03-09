@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #4a90e2;
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --input-bg: #ffffff;
+    --input-border: #ddd;
+    --header-color: #4a90e2;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --text-color: #f5f4f4; 
+    --input-bg: #0f3460;
+    --input-border: #533483;
+    --header-color: #e94560;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: var(--header-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    border-bottom: 2px solid var(--input-border);
+    padding-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 12px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.btn-reset {
+    background-color: #95a5a6;
+}
+
+.btn-reset:hover {
+    background-color: #7f8c8d;
+}
+.theme-toggle {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.output {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.03); 
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+.grade-A-plus { background: var(--success-color); }
+.grade-A { background: #0812dad1; }
+.grade-B { background: #e36409; }
+.grade-C { background: #f1c40f; }
+.grade-D { background: #6322e6; }
+.grade-fail { background: var(--error-color); }
